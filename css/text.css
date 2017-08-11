@@ -1,0 +1,78 @@
+/* Сбрасываем все отступы, чтобы во всех браузерах отступы всех элементов были
+ * одинаковые */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Настраиваем стили для всей страницы: семейство шрифтов, размер шрифта и цвет
+ * текста */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  color: #404040;
+}
+
+/* В div с классом wrapper у нас завернуто все содержимое страницы. Добавляем
+ * отступы от всех границ окна*/
+.wrapper {
+  margin: 2em 40px;
+}
+
+/* Настраиваем размер текста и нижний отступ для заголовков.
+ *
+ * Обратите внимание, что мы указываем размеры в em — относительная единица,
+ * равная текущему размеру шрифта. Это удобно, т.к. можно сразу менять размер
+ * шрифтов на всей странице (попробуйте заменить font-size: 16px у body на 18px
+ * или 12px) */
+.title {
+  font-size: 2.4em;
+  margin-bottom: .4em;
+}
+.title-small {
+  font-size: 1.2em;
+  margin-bottom: .4em;
+}
+
+/* Настраиваем стили для цитаты:
+ *
+ * Семейство шрифтов, курсивное начертание (italic) и размер шрифта, внешние и
+ * внутренние отступы, цвет фона.
+ *
+ * Обратите внимание, что мы сделали слева отрицательный отступ равный размеру
+ * левой же границы (10px) */
+.quote {
+  font-family: Georgia, serif;
+  font-size: 1.6em;
+  margin: 1em 0 1em -10px;
+  padding: 40px 1.6em;
+  border-left: 10px solid #f24d16;
+  background: #fffce6;
+  font-style: italic;
+}
+
+/* Стили для автора цитаты: цвет текста, отступ сверху и выравниени по правому
+ * краю */
+.quote-footer {
+  margin-top: .8em;
+  text-align: right;
+  color: #7D1424;
+}
+
+/* Стили для заметки */
+.note {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 1em 20px;
+  background: #edd834;
+}
+
+/* Стили для каждого параграфа внутри блока <div class="content"> */
+.content p {
+  margin-bottom: 1.2em;
+}
+
+.countainer{
+	width: 90%;
+	margin: auto;
+}
